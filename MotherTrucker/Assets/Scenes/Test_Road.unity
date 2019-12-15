@@ -417,5 +417,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1857469422779461432, guid: dce3521fce5f4b9499d54b39767d45e2,
+        type: 3}
+      propertyPath: chanceOfRain
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dce3521fce5f4b9499d54b39767d45e2, type: 3}

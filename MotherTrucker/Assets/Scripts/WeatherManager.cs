@@ -5,9 +5,10 @@ public class WeatherManager : MonoBehaviour
     // Cache
     [SerializeField] GameObject rainVFX;
     ParticleSystem rain;
+    AudioSource rainSFX;
 
     // Variables
-    bool isRaining;
+    bool isRaining = false;
     float timeSinceLastWeatherCheck = Mathf.Infinity;
     [SerializeField] float weatherCheckFrequency = 60f;
     [SerializeField] int chanceOfRain = 1;
@@ -17,6 +18,7 @@ public class WeatherManager : MonoBehaviour
     private void Start()
     {
         rain = rainVFX.GetComponent<ParticleSystem>();
+        rainSFX = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,21 +35,21 @@ public class WeatherManager : MonoBehaviour
     private void CheckWeather()
     {
         int precipitation = Random.Range(0, 101)*chanceOfRain;
-        print(precipitation);
-        if (precipitation >= rainThreshold && rain.isStopped)
+        if (precipitation >= rainThreshold && !isRaining)
         {
+            isRaining = true;
             rain.Play();
-            print("start raining");
+            rainSFX.Play();
         }
-        else if (precipitation <= clearSkyThreshold && rain.isPlaying)
+        else if (precipitation <= clearSkyThreshold && isRaining)
         {
+            isRaining = false;
             rain.Stop();
-            print("stop raining");
+            rainSFX.Stop();
         }
         else
         {
-            print("carry on");
-            return;
+            // Do nothing
         }
     }
 }
