@@ -6,25 +6,23 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Variables
-    [SerializeField] float moveSpeed = 5;
+    //
 
     // Cache
-    Transform playerTransform;
+    Mover mover;
     
     // Start is called before the first frame update
     void Start()
     {
-        playerTransform = GetComponent<Transform>();
+        mover = GetComponent<Mover>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-    }
-
-    private void Move()
-    {
-        playerTransform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            mover.AccelerateDecelerate();
+        }
     }
 }
