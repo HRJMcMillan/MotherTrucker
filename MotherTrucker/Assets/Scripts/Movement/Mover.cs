@@ -79,4 +79,10 @@ public class Mover : MonoBehaviour
     {
         playerTransform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
+
+    // Returns whether the car is moving or not
+    public bool Stopped()
+    {
+        return stopped;
+    }
 }
