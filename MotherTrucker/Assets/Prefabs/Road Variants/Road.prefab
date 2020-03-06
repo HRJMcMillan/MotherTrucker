@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 4943582994087843021, guid: b028d367998a2eb41b95eeddabe19307,
         type: 3}
       propertyPath: m_Name
-      value: RoadSpawner
+      value: Spawner
       objectReference: {fileID: 0}
     - target: {fileID: 913127402741848070, guid: b028d367998a2eb41b95eeddabe19307,
         type: 3}
@@ -205,32 +205,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 70823920759321140, guid: b028d367998a2eb41b95eeddabe19307,
-        type: 3}
-      propertyPath: road
-      value: 
-      objectReference: {fileID: 1226196271240815446, guid: 39df4d58e81dbff4281f352260715f39,
-        type: 3}
-    - target: {fileID: 8541279680613234813, guid: b028d367998a2eb41b95eeddabe19307,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 36.828537
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541279680613234813, guid: b028d367998a2eb41b95eeddabe19307,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 2.4371896
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541279680613234813, guid: b028d367998a2eb41b95eeddabe19307,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 24.926456
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541279680613234813, guid: b028d367998a2eb41b95eeddabe19307,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 4.791292
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b028d367998a2eb41b95eeddabe19307, type: 3}

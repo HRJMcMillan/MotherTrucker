@@ -35,7 +35,6 @@ public class WeatherManager : MonoBehaviour
     private void CheckWeather()
     {
         int precipitation = Random.Range(0, 101)*chanceOfRain;
-        print(precipitation);
         if (precipitation >= rainThreshold && !isRaining)
         {
             isRaining = true;

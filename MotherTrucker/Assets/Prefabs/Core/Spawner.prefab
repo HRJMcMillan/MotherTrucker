@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 913127402741848070}
   - component: {fileID: 8541279680613234813}
   - component: {fileID: 70823920759321140}
+  - component: {fileID: 4935619872113064554}
   m_Layer: 0
-  m_Name: RoadSpawner
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,5 +56,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 480c08316017f1348b3148ad933614bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4935619872113064554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943582994087843021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1953454b3f0f744a851ea0009f595c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
